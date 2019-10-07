@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JSCardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-Vp-9JP">
+                                <rect key="frame" x="186" y="152" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6jx-SH-ZoH">
+                                <rect key="frame" x="40.5" y="203" width="333" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6jx-SH-ZoH" secondAttribute="height" multiplier="2:3" id="Ard-eC-LJK"/>
+                                    <constraint firstAttribute="height" constant="500" id="htE-qz-Kkc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9y-7g-9VK">
+                                <rect key="frame" x="153.5" y="750" width="107" height="30"/>
+                                <state key="normal" title="Draw New Card"/>
+                                <connections>
+                                    <action selector="drawNewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmB-Ex-qlc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="k9y-7g-9VK" firstAttribute="top" secondItem="6jx-SH-ZoH" secondAttribute="bottom" constant="47" id="5c1-4w-L4n"/>
+                            <constraint firstItem="k9y-7g-9VK" firstAttribute="centerX" secondItem="6jx-SH-ZoH" secondAttribute="centerX" id="NtE-Gr-phi"/>
+                            <constraint firstItem="k9y-7g-9VK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SME-4G-T1z"/>
+                            <constraint firstItem="YRS-Vp-9JP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="aK1-VP-iSs"/>
+                            <constraint firstItem="6jx-SH-ZoH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oIv-m4-pLN"/>
+                            <constraint firstItem="6jx-SH-ZoH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uDK-f9-gGS"/>
+                            <constraint firstItem="YRS-Vp-9JP" firstAttribute="centerX" secondItem="6jx-SH-ZoH" secondAttribute="centerX" id="xPI-Co-7X7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="6jx-SH-ZoH" id="xE5-El-Qxz"/>
+                        <outlet property="suitLabel" destination="YRS-Vp-9JP" id="L05-Um-khW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
