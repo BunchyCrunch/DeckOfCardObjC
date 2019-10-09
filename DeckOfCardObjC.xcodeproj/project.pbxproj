@@ -67,10 +67,10 @@
 		FC96E739234B9B8200702FAF /* DeckOfCardObjC */ = {
 			isa = PBXGroup;
 			children = (
+				FC96E759234B9EAC00702FAF /* Models */,
 				FC96E754234B9C8700702FAF /* Views */,
 				FC96E753234B9C7B00702FAF /* Controllers */,
 				FC96E755234B9C9300702FAF /* Resources */,
-				FC96E759234B9EAC00702FAF /* Models */,
 			);
 			path = DeckOfCardObjC;
 			sourceTree = "<group>";
